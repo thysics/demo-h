@@ -1,0 +1,79 @@
+.project-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.project-action-btn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-action-btn.view {
+  color: #4a6fa5;
+}
+
+.project-action-btn.edit {
+  color: #5e9b8b;
+}
+
+.project-action-btn.delete {
+  color: #d9534f;
+}
+
+.project-action-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.project-description {
+  margin: 8px 0 16px;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.project-meta-item {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,150 @@
+.task-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  padding: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.task-action-btn:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.task-action-btn.edit:hover {
+  color: #2196f3;
+}
+
+.task-action-btn.delete:hover {
+  color: #f44336;
+}
+
+.task-action-btn.complete:hover {
+  color: #4caf50;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.task-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.task-description {
+  margin-top: 12px;
+  color: #555;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.status-in_progress {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.status-completed {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+
+/* Priority badges */
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.priority-low {
+  background-color: #f1f8e9;
+  color: #33691e;
+}
+
+.priority-medium {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.priority-high {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Task item border based on status */
+.task-item.status-pending {
+  border-left: 4px solid #ff9800;
+}
+
+.task-item.status-in_progress {
+  border-left: 4px solid #2196f3;
+}
+
+.task-item.status-completed {
+  border-left: 4px solid #4caf50;
+}
+
+/* Task item with due date approaching */
+.task-item.due-soon {
+  background-color: #fff8e1;
+}
+
+.task-item.overdue {
+  background-color: #ffebee;
+}

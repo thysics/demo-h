@@ -1,0 +1,175 @@
+.tasks-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.tasks-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.create-task-btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-task-btn:hover {
+  background-color: #1976d2;
+}
+
+.tasks-filters {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filters-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.filters-toggle {
+  background: none;
+  border: none;
+  color: #2196f3;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filters-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.filters-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-btn.reset {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.filter-btn.apply {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+}
+
+.tasks-list {
+  margin-top: 24px;
+}
+
+.tasks-empty {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+}
+
+.tasks-empty h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.tasks-empty p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.tasks-loading {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+}
+
+.tasks-error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.tasks-count {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tasks-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .filters-form {
+    grid-template-columns: 1fr;
+  }
+}
